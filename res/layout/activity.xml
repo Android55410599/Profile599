@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="135dp"
+            android:layout_height="140dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/enn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_Edit"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile" />
+
+        <Button
+            android:id="@+id/btn_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Image" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textVie6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textVie5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/textVie5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textVie6"
+        android:layout_alignLeft="@+id/textVie4"
+        android:layout_marginBottom="29dp"
+        android:text="Weiht" />
+
+    <TextView
+        android:id="@+id/textVie4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textVie5"
+        android:layout_alignLeft="@+id/textVie3"
+        android:layout_marginBottom="32dp"
+        android:text="Height" />
+
+    <TextView
+        android:id="@+id/textVie3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textVie2"
+        android:layout_below="@+id/textVie2"
+        android:layout_marginTop="26dp"
+        android:text="Birthday" />
+
+    <TextView
+        android:id="@+id/textVie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_centerVertical="true"
+        android:text="Age" />
+
+    <TextView
+        android:id="@+id/txtViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textVie2"
+        android:layout_alignBottom="@+id/textVie2"
+        android:layout_alignRight="@+id/LinearLayout1"
+        android:text="21" />
+
+    <TextView
+        android:id="@+id/txtViewBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textVie3"
+        android:layout_alignRight="@+id/txtViewAge"
+        android:text="12/08/2536" />
+
+    <TextView
+        android:id="@+id/TextViewH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textVie4"
+        android:layout_alignRight="@+id/txtViewBirthday"
+        android:text="165 cm" />
+
+    <TextView
+        android:id="@+id/TxtViewW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextViewH"
+        android:layout_below="@+id/textVie4"
+        android:text="50 kg" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textVie2"
+        android:background="#cccccc" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textVie3"
+        android:background="#cccccc" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextViewH"
+        android:background="#cccccc" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignLeft="@+id/textVie5"
+        android:layout_below="@+id/TxtViewW"
+        android:background="#cccccc" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextViewEmail"
+        android:background="#cccccc" />
+
+    <TextView
+        android:id="@+id/TextViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textVie6"
+        android:layout_alignBottom="@+id/textVie6"
+        android:layout_alignRight="@+id/TxtViewW"
+        android:text="onwara6916@gmail.com" />
+
+    <TextView
+        android:id="@+id/textVie1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LinearLayout1"
+        android:layout_alignLeft="@+id/LinearLayout1"
+        android:text="TextView" />
+
+</RelativeLayout>
