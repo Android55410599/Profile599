@@ -21,10 +21,10 @@ protected void onCreate(Bundle savedInstanceState) {
 	// TODO Auto-generated method stub
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.edit_layout);
-	kobboon();
+	onwara();
 	
 }
-private void kobboon() {
+private void onwara() {
 	// TODO Auto-generated method stub
 	E1= (EditText) findViewById(R.id.editText1);
 	E2= (EditText) findViewById(R.id.editText2);
